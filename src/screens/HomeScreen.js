@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import Card from '../components/Card'; 
+import { styles } from '../../assets/styles/appStyles';
+import { ScrollView } from 'react-native';
 
 const HomeScreen = () => {
   return (
@@ -11,13 +13,14 @@ const HomeScreen = () => {
           <Text style={styles.buttonText}>Botón</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.cardsContainer}>
+      <ScrollView contentContainerStyle={styles.cardsContainer}>
         
-        <Card />
-        <Card/>
-        <Card/>
-       
-      </View>
+        <Card  
+        title="Piscina"
+        availability="Disponible"
+        image={require('../../assets/pool.png')} /> 
+        
+      </ScrollView>
     </View>
   );
 };

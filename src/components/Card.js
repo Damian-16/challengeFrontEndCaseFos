@@ -1,23 +1,17 @@
-import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, Image, StyleSheet } from "react-native";
+import { styles } from "../../assets/styles/appStyles";
 
-const Card = () => {
+const Card = ({image,title,availability}) => {
   return (
     <View style={styles.card}>
- <Text>AAAHH</Text>
+      <Image source={image} style={styles.cardImage} />
+      <Text style={styles.cardTitle}>{title}</Text>
+      <Text style={styles.cardAvailability}>{availability}</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  card: {
-    width: '45%',
-    height: 150,
-    margin: 8,
-    backgroundColor: '#f0f0f0',
-    borderRadius: 8,
-  },
 
-});
 
 export default Card;

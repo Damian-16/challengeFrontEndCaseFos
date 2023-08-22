@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b388dee-2e49-4331-8426-16812048e7cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/appStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/challengeFrontEndCaseFos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/challengeFrontEndCaseFos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/appStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/appStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -43,9 +45,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="124" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1692651265342">
+    <state x="124" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1692675881848">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="124" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1692651265342" />
+    <state x="124" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1692675881848" />
+    <state x="100" y="133" width="1140" height="488" key="AVDManager" timestamp="1692675803014">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="100" y="133" width="1140" height="488" key="AVDManager/0.0.1360.728@0.0.1360.728" timestamp="1692675803014" />
   </component>
 </project>
