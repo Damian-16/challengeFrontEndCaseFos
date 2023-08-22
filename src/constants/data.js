@@ -1,5 +1,5 @@
-
-const facilitiesData = [
+//area comun
+export const facilitiesData = [
     {
       title: 'Piscina',
       availability: 'Disponible',
@@ -21,5 +21,24 @@ const facilitiesData = [
     
   ];
   
-  export default facilitiesData;
+  //lista de reservas
+  export const reservationsData = [
+    {
+      name:'emilio',
+      apartment: 'Apartamento 101',
+      title: 'Piscina',
+      date: new Date(),
+      // status: 'Confirmada',
+    },
+    {
+      name:'Ravena',
+      apartment: 'Apartamento 102',
+      title: 'Gimnasio',
+      date: new Date(),
+      // status: 'Pendiente',
+    },
+    // ... Otras reservas
+  ];
+  
+
   

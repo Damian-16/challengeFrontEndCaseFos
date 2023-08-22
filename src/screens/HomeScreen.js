@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import Card from "../components/Card";
 import { styles } from "../../assets/styles/appStyles";
 import { ScrollView } from "react-native";
-import facilitiesData from "../constants/data";
+import {facilitiesData} from "../constants/data";
 
 const HomeScreen = () => {
   return (

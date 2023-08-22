@@ -4,6 +4,8 @@ import { styles } from "../../assets/styles/appStyles";
 import { TouchableOpacity } from "react-native";
 import { Modal } from "react-native";
 import ReservationModal from "./ReservationModal";
+import ReservationsList from "./ReservationList";
+import { reservationsData } from "../constants/data";
 
 const Card = ({ image, title, availability,dateTime }) => {
   const avaiable = availability === "Disponible";
@@ -45,6 +47,7 @@ const Card = ({ image, title, availability,dateTime }) => {
           <Text style={styles.reserveButtonText}>Reservar</Text>
         </TouchableOpacity>
       )}
+      <ReservationsList data={reservationsData} />
       <ReservationModal
         visible={modalVisible}
         selectedDate={selectedDate}
