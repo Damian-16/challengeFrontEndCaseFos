@@ -5,6 +5,8 @@ import { styles } from "../../assets/styles/appStyles";
 import { ScrollView } from "react-native";
 import useStore from "../zustand/store";
 import { facilitiesData } from "../constants/data";
+import { SimpleLineIcons } from "@expo/vector-icons";
+import Header from "../components/Header";
 
 
 const HomeScreen = () => {
@@ -16,12 +18,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Image source={require("../../assets/icon.png")} style={styles.logo} />
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Botón</Text>
-        </TouchableOpacity>
-      </View>
+      <Header/>
       <ScrollView contentContainerStyle={styles.cardsContainer}>
         {facilities.map((facility, index) => (
           <Card

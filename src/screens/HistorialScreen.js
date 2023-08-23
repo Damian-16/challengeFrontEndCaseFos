@@ -3,6 +3,8 @@ import { View, ScrollView, StyleSheet } from 'react-native';
 import useStore from '../zustand/store';
 import Box from '../components/Box';
 import { Text } from 'react-native';
+import { styles } from '../../assets/styles/appStyles';
+import Header from '../components/Header';
 
 const HistorialScreen = () => {
   const user = useStore(state => state.user);
@@ -21,9 +23,9 @@ const HistorialScreen = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text>Mis Reservas</Text>
+      <Header/>
+      <Text style={{color:"#fff",textAlign:"center",margin:10}}>Mis Reservas</Text>
       {myReservations.map((reservation, index) => {
-        console.log("🚀 ~ file: HistorialScreen.js:18 ~ {myReservations.map ~ reservation:", reservation)
         const facility = item.find(facility =>
           facility.title === reservation.title
         );
@@ -46,11 +48,5 @@ const HistorialScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 16,
-    alignItems: 'center',
-  },
-});
 
 export default HistorialScreen;

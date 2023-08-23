@@ -10,13 +10,19 @@ export const facilitiesData = [
     {
       title: 'Gimnasio',
       availability: 'No disponible',
-      image: require('../../assets/pool.png'),
+      image: require('../../assets/Gym.png'),
       reservation:[]
     },
     {
       title: 'Salón de Eventos',
       availability: 'Disponible',
-      image: require('../../assets/pool.png'),
+      image: require('../../assets/Event.png'),
+      reservation:[]
+    },
+    {
+      title: 'Cancha de Fútbol',
+      availability: 'Disponible',
+      image: require('../../assets/Soccer.png'),
       reservation:[]
     },
     

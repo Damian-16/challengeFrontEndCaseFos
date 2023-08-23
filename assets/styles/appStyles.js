@@ -117,9 +117,12 @@ export const styles = StyleSheet.create({
       fontSize: getResponsiveFontSize(0.03),
       margin:10,
       fontWeight: 'bold',
+      color:darkColors.text
     },
     boxDateTime: {
-      margin: '1%',
+      flex: 1,
+      textAlign: 'right',
+      color:darkColors.text
     },
 
 
