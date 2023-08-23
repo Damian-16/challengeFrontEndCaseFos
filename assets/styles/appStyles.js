@@ -6,12 +6,17 @@ const windowWidth = Dimensions.get('window').width;
 export const getResponsiveFontSize = (percentage) => {
   return windowWidth * percentage;
 };
+export const darkColors = {
+  background: '#49413F',
+  text: '#FFFFFF',       
+  buttonBackground: '#008000', 
+};
 
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
       padding: 16,
-      backgroundColor: '#fff',
+      backgroundColor:  darkColors.background,
     },
     header: {
       flexDirection: 'row',
@@ -44,8 +49,9 @@ export const styles = StyleSheet.create({
         width: "45%",
         height: 150,
         margin: 8,
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#171515",
         borderRadius: 8,
+        
     },
     largeCard: {
       width: '100%',
@@ -62,10 +68,29 @@ export const styles = StyleSheet.create({
     },
     cardTitle: {
         textAlign: 'center',
+        color:darkColors.text,
     },
     cardAvailability: {
       color:'green',
       textAlign: 'center'        
+    },
+    modalContainer: {
+      flex: 1,
+      backgroundColor: darkColors.background,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    button: {
+      backgroundColor: darkColors.buttonBackground,
+      paddingVertical: 10,
+      paddingHorizontal: 20,
+      marginTop: 10,
+      borderRadius: 8
+    },
+    buttonText: {
+      color: darkColors.text,
+      fontWeight: 'bold',
+      textAlign:"center"
     },
     box: {
       width: '100%',

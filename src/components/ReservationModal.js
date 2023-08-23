@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Alert } from 'react-native';
 import { View, Text, Modal, Button } from 'react-native';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
+import { styles } from '../../assets/styles/appStyles';
+import { TouchableOpacity } from 'react-native';
 
 const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, onCancel}) => {
   const [showDateTimePicker, setShowDateTimePicker] = useState(false);
@@ -47,10 +49,13 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
   }
   return (
     <Modal visible={visible} animationType="slide">
+      <View style={styles.modalContainer}>
       <View>
-        {!dateSelected?<Text>Selecciona una fecha y hora para la reserva:</Text>:<Text>la date seleccionada es {dateSelected.toLocaleString("en-US")}</Text>}
+        {!dateSelected?null:<Text style={styles.buttonText}>La fecha seleccionada es {dateSelected.toLocaleString("en-US")}</Text>}
       <View>
-      <Button title="Show Date Picker" onPress={showDatePicker} />
+      <TouchableOpacity style={styles.button}  onPress={showDatePicker} >
+        <Text style={styles.buttonText}>Seleccione Fecha y Hora</Text>
+      </TouchableOpacity>
       <DateTimePickerModal
         isVisible={isDatePickerVisible}
         mode="datetime"
@@ -58,8 +63,13 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
         onCancel={hideDatePicker}
       />
     </View>
-        <Button title="Confirmar Reserva" onPress={createReservation} />
-        <Button title="Cancelar" onPress={handleCancel} />
+    <TouchableOpacity style={styles.button} onPress={createReservation}>
+            <Text style={styles.buttonText}>Confirmar Reserva</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={handleCancel}>
+            <Text style={styles.buttonText}>Cancelar</Text>
+          </TouchableOpacity>
+      </View>
       </View>
     </Modal>
   );

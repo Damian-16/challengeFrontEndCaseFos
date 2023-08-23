@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import useStore from '../zustand/store';
 import Box from '../components/Box';
+import { Text } from 'react-native';
 
 const HistorialScreen = () => {
   const user = useStore(state => state.user);
