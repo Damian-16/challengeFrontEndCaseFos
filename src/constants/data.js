@@ -27,15 +27,18 @@ export const facilitiesData = [
     {
       name:'emilio',
       apartment: 'Apartamento 101',
-      title: 'Piscina',
       dateTime:null,   
     },
     {
       name:'Ravena',
       apartment: 'Apartamento 102',
-      title: 'Gimnasio',
       dateTime:null,
       },
+      {
+        name:'Maximo Cosseti',
+        apartment: 'Apartamento 105',
+        dateTime:null,
+        }, 
     
   ];
   

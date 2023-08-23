@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Alert } from 'react-native';
 import { View, Text, Modal, Button } from 'react-native';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
@@ -28,7 +29,7 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
   };
 
   const handleConfirm = (date) => {
-    console.warn("A date has been picked: ", date);
+    
     setDateSelected(date)
     hideDatePicker();
   };
@@ -39,7 +40,10 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
   };
   const createReservation = ()=>{
     console.log({dateSelected})
-     onConfirm(dateSelected)
+    !dateSelected? Alert.alert("Error","Ingrese Fecha y Hora",[
+      { text: "OK", onPress: () => console.log("OK Pressed") },
+    ]): onConfirm(dateSelected)
+    
   }
   return (
     <Modal visible={visible} animationType="slide">
