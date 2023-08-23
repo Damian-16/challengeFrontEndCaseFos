@@ -62,13 +62,13 @@ const Card = ({ image, title, availability, reservation }) => {
       </Text>
       {avaiable && (
         <TouchableOpacity
-          style={styles.reserveButton}
+          style={{...styles.button,margin:10}}
           onPress={() => handleReserve()}
         >
-          <Text style={styles.reserveButtonText}>Reservar</Text>
+          <Text style={styles.buttonText}>Reservar</Text>
         </TouchableOpacity>
       )}
-      <Text>Cantidad de Reservas:{reservation.length}</Text>
+      <Text style={styles.buttonText}>Cantidad de Reservas:{reservation.length}</Text>
       <ReservationModal
         visible={modalVisible}
         selectedDate={selectedDate}

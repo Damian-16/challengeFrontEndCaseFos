@@ -15,18 +15,22 @@ export const darkColors = {
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      padding: 16,
       backgroundColor:  darkColors.background,
     },
     header: {
       flexDirection: 'row',
+      marginTop: "10%",
       justifyContent: 'space-between',
       alignItems: 'center',
       marginBottom: 16,
+      backgroundColor: 'black',
+      width: '100%',
     },
     logo: {
-      width: 100,
-      height: 40,
+      width: 50,
+      height:50,
+      borderRadius:25,
+      resizeMode:'contain'
     },
     button: {
       paddingVertical: 8,
@@ -47,10 +51,11 @@ export const styles = StyleSheet.create({
     },
     card: {
         width: "45%",
-        height: 150,
+        height: 250,
         margin: 8,
         backgroundColor: "#171515",
         borderRadius: 8,
+        padding:5
         
     },
     largeCard: {

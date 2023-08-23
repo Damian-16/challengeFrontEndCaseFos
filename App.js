@@ -9,11 +9,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen}/>
-      <Tab.Screen name="Historial" component={HistorialScreen}/>
-      <Tab.Screen name="Notificaciones" component={HomeScreen}/>
-      <Tab.Screen name="Pendientes" component={HomeScreen}/>
-      <Tab.Screen name="Alerta" component={HomeScreen}/>
+      <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Historial" component={HistorialScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Notificaciones" component={HomeScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Pendientes" component={HomeScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Alerta" component={HomeScreen} options={{ headerShown: false }}/>
       </Tab.Navigator>
     </NavigationContainer>
    
