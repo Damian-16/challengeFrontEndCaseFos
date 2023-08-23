@@ -9,7 +9,7 @@ export const getResponsiveFontSize = (percentage) => {
 export const darkColors = {
   background: '#49413F',
   text: '#FFFFFF',       
-  buttonBackground: '#008000', 
+  buttonBackground: "#6BE690", 
 };
 
 export const styles = StyleSheet.create({
