@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Modal, Button } from 'react-native';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
-const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, onCancel }) => {
+const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, onCancel}) => {
   const [showDateTimePicker, setShowDateTimePicker] = useState(false);
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
   const [dateSelected, setDateSelected] = useState(!!selectedDate); 
@@ -38,7 +38,8 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
     setDateSelected(false); 
   };
   const createReservation = ()=>{
-     
+    console.log({dateSelected})
+     onConfirm(dateSelected)
   }
   return (
     <Modal visible={visible} animationType="slide">

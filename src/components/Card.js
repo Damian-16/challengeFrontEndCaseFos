@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Alert } from "react-native";
 import { styles } from "../../assets/styles/appStyles";
 import { TouchableOpacity } from "react-native";
-import { Modal } from "react-native";
 import ReservationModal from "./ReservationModal";
-import ReservationsList from "./ReservationList";
-import { reservationsData } from "../constants/data";
+import useStore from "../zustand/store";
 
-const Card = ({ image, title, availability,dateTime }) => {
+const Card = ({ image, title, availability, reservation }) => {
   const avaiable = availability === "Disponible";
-  const [isReserved, setReserved] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedDate, setSelectedDate] = useState();
-
+  const confirmReservation = useStore((state) => state.confirmReservation);
 
   const handleReserve = () => {
     setModalVisible(true);
   };
 
-  const handleConfirmReservation = () => {
-    
-    setReserved(true); 
+  const handleConfirmReservation = (newReservation) => {
+    confirmReservation(newReservation); // Agrega la reserva al estado
+
     setModalVisible(false);
+    Alert.alert("Reservado", "El lugar ha sido Reservado con éxito", [
+      { text: "OK", onPress: () => console.log("OK Pressed") },
+    ]);
   };
 
   const handleCancel = () => {
@@ -47,15 +47,21 @@ const Card = ({ image, title, availability,dateTime }) => {
           <Text style={styles.reserveButtonText}>Reservar</Text>
         </TouchableOpacity>
       )}
-      <ReservationsList data={reservationsData} />
+      <Text>Cantidad de Reservas:{reservation.length}</Text>
       <ReservationModal
         visible={modalVisible}
         selectedDate={selectedDate}
         setSelectedDate={setSelectedDate}
-        onConfirm={handleConfirmReservation}
+        onConfirm={(date) =>
+          handleConfirmReservation({
+            name: "nombre",
+            apartment: "apartamento123",
+            title: title,
+            date: date,
+          })
+        }
         onCancel={handleCancel}
       />
-      
     </View>
   );
 };

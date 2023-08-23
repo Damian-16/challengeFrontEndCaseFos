@@ -4,19 +4,20 @@ export const facilitiesData = [
       title: 'Piscina',
       availability: 'Disponible',
       image: require('../../assets/pool.png'),
-      dateTime:null
+      reservation:[],
+     
     },
     {
       title: 'Gimnasio',
       availability: 'No disponible',
       image: require('../../assets/pool.png'),
-      dateTime:null
+      reservation:[]
     },
     {
       title: 'Salón de Eventos',
       availability: 'Disponible',
       image: require('../../assets/pool.png'),
-      dateTime:null
+      reservation:[]
     },
     
   ];
@@ -27,17 +28,15 @@ export const facilitiesData = [
       name:'emilio',
       apartment: 'Apartamento 101',
       title: 'Piscina',
-      date: new Date(),
-      // status: 'Confirmada',
+      dateTime:null,   
     },
     {
       name:'Ravena',
       apartment: 'Apartamento 102',
       title: 'Gimnasio',
-      date: new Date(),
-      // status: 'Pendiente',
-    },
-    // ... Otras reservas
+      dateTime:null,
+      },
+    
   ];
   
 
