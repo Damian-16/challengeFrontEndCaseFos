@@ -48,3 +48,13 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+
+## Reflexiones
+Durante la realización de este caso práctico, me encontré con una serie de desafíos que me permitieron aprender y crecer como desarrollador. Si bien logré implementar gran parte de la funcionalidad deseada en la aplicación, hubo ciertas limitaciones de tiempo que afectaron la profundidad de mi trabajo.
+Si tuviera más tiempo, me habría centrado en crear una experiencia más pulida y coherente para el usuario, asegurando que la aplicación se vea y funcione de manera impecable.
+
+Otra área que quedó pendiente debido a las restricciones de tiempo fue la inclusión de una pantalla de perfil y un sistema de inicio de sesión e incluso el que la app este en Playstore. Reconozco que estos son componentes fundamentales para muchas aplicaciones y habrían agregado una capa adicional de interacción personalizada para los usuarios.
+
+En resumen, aunque la aplicación cumple con muchas de las expectativas iniciales, reconozco que hay áreas que podrían mejorarse con más tiempo y dedicación. Este proyecto me ha dejado con una comprensión más sólida de las prácticas de desarrollo, así como con el deseo de continuar aprendiendo y mejorando en futuros desafíos.
+
