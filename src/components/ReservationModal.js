@@ -41,9 +41,9 @@ const ReservationModal = ({ visible, selectedDate, setSelectedDate, onConfirm, o
     setDateSelected(false); 
   };
   const createReservation = ()=>{
-    console.log({dateSelected})
+    
     !dateSelected? Alert.alert("Error","Ingrese Fecha y Hora",[
-      { text: "OK", onPress: () => console.log("OK Pressed") },
+      { text: "OK" },
     ]): onConfirm(dateSelected)
     
   }

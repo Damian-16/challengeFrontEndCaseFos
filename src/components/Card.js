@@ -20,16 +20,13 @@ const Card = ({ image, title, availability, reservation }) => {
   };
 
   const handleConfirmReservation = (newReservation) => {
-    console.log(
-      "🚀 ~ file: Card.js:20 ~ handleConfirmReservation ~ newReservation:",
-      newReservation
-    );
+
     confirmReservation(newReservation); // Agrega la reserva al estado
     updateReservationDateTime(newReservation.dateTime);
 
     setModalVisible(false);
     Alert.alert("Reservado", "El lugar ha sido Reservado con éxito", [
-      { text: "OK", onPress: () => console.log("OK Pressed") },
+      { text: "OK" },
     ]);
   };
 

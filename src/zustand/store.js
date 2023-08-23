@@ -20,7 +20,7 @@ const useStore = create((set, get) => ({
     }));
   },
   confirmReservation: function (newReservation) {
-    console.log("🚀 ~ file: store.js:23 ~ useStore ~ newReservation:", newReservation)
+   
     const updatedFacilities = get().facilities.map((facility) => {
       if (facility.title === newReservation.title) {
         return {
